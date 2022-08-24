@@ -1,0 +1,16 @@
+<p>mao-dupla works!</p>
+
+<input type="text" [(ngModel)]="curso">
+
+<p>Me identifiquei mais com o curso: {{curso}}</p>
+
+<br>
+
+<input type="number" [(ngModel)]="numero1">
+<input type="number" [(ngModel)]="numero2">
+<br>
+<button (click)="somar()">Somar</button>
+<br>
+{{numero1}}+{{numero2}}
+<br>
+{{somar()}}
