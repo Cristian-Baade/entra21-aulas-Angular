@@ -17,61 +17,61 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a routerLink="vaiPagina" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente pagina</p>
+                        <li *ngFor="let link of links" class="nav-item">
+                            <a [routerLink]="link.rota" class="nav-link">
+                                <i [class]="link.cor"></i>
+                                <p class="text">{{link.textContent}}</p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a routerLink="vaiOutra" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente outro</p>
+                                <p>Outro</p>
                             </a>
-                        </li>
+                        </li> -->
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a routerLink="property" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente property</p>
+                                <p>Property</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a routerLink="event" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente Event</p>
+                                <p>Event</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a routerLink="mao-dupla" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente Mao Dupla </p>
+                                <p>Mao Dupla </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a [routerLink]="['/receber', 'Cristian',19,'Otacilio Costa']" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente Receber</p>
+                                <p>Receber</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a routerLink="enviar" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente Enviar</p>
+                                <p>Enviar</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a routerLink="diretiva" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente Diretiva</p>
+                                <p>DiretivaIf</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a routerLink="diretivaFor" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Ver componente DiretivaFor</p>
+                                <p>DiretivaFor</p>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
             </ul>
