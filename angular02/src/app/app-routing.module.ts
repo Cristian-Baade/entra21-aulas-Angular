@@ -12,19 +12,21 @@ import { PaginaComponent } from './pagina/pagina.component';
 import { PropertyComponent } from './binding/property/property.component';
 import { ReceberDadosComponent } from './receber-dados/receber-dados.component';
 import { SegurancaService } from './seguranca.service';
+import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 
 const routes: Routes = [
-  { path: "vaiPagina", component: PaginaComponent, canActivate:[SegurancaService] },
-  { path: "vaiInicio", component: InicioComponent, canActivate:[SegurancaService] },
-  { path: "vaiOutra", component: OutroComponent, canActivate:[SegurancaService] },
-  { path: "property", component: PropertyComponent, canActivate:[SegurancaService] },
-  { path: "event", component: EventComponent, canActivate:[SegurancaService] },
-  { path: "mao-dupla", component: MaoDuplaComponent, canActivate:[SegurancaService] },
-  { path: "receber/:info1/:dado2/:teste", component: ReceberDadosComponent, canActivate:[SegurancaService] },
-  { path: "enviar", component: EnviarComponent, canActivate:[SegurancaService] },
-  { path: "diretiva", component: DiretivaComponent, canActivate:[SegurancaService] },
-  { path: "diretivaFor", component: DiretivaForComponent, canActivate:[SegurancaService] },
+  { path: "vaiPagina", component: PaginaComponent, canActivate: [SegurancaService] },
+  { path: "vaiInicio", component: InicioComponent, canActivate: [SegurancaService] },
+  { path: "vaiOutra", component: OutroComponent, canActivate: [SegurancaService] },
+  { path: "property", component: PropertyComponent, canActivate: [SegurancaService] },
+  { path: "event", component: EventComponent, canActivate: [SegurancaService] },
+  { path: "mao-dupla", component: MaoDuplaComponent, canActivate: [SegurancaService] },
+  { path: "receber/:info1/:dado2/:teste", component: ReceberDadosComponent, canActivate: [SegurancaService] },
+  { path: "enviar", component: EnviarComponent, canActivate: [SegurancaService] },
+  { path: "diretiva", component: DiretivaComponent, canActivate: [SegurancaService] },
+  { path: "diretivaFor", component: DiretivaForComponent, canActivate: [SegurancaService] },
   { path: "", component: LoginComponent },
+  { path: "consumindoApi", component: ConsumindoApiComponent, canActivate: [SegurancaService] },
 
 
 

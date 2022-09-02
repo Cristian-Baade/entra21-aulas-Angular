@@ -46,7 +46,7 @@ export class MenuComponent implements OnInit {
       cor: "nav-icon far fa-circle text-light"
     })
     this.links.push({
-      rota: ["receber", "Cristian",19,"Otacilio Costa"],
+      rota: ["receber", "Cristian", 19, "Otacilio Costa"],
       textContent: "Receber",
       cor: "nav-icon far fa-circle text-dark"
     })
@@ -63,6 +63,11 @@ export class MenuComponent implements OnInit {
     this.links.push({
       rota: "diretivaFor",
       textContent: "Diretiva For",
+      cor: "nav-icon far fa-circle text-danger"
+    })
+    this.links.push({
+      rota: "consumindoApi",
+      textContent: "Consumindo Api",
       cor: "nav-icon far fa-circle text-danger"
     })
 

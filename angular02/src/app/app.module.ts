@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaginaComponent } from './pagina/pagina.component';
@@ -20,6 +20,7 @@ import { LoginComponent } from './login/login.component';
 import { SegurancaService } from './seguranca.service';
 import { DiretivasModule } from './diretivas/diretivas.module';
 import { BindingModule } from './binding/binding.module';
+import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +32,16 @@ import { BindingModule } from './binding/binding.module';
     MenuComponent,
     ReceberDadosComponent,
     EnviarComponent,
-    LoginComponent
+    LoginComponent,
+    ConsumindoApiComponent
   ],
   imports: [
     BindingModule,
     DiretivasModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [SegurancaService],
   bootstrap: [AppComponent]
